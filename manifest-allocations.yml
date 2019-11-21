@@ -5,7 +5,5 @@ applications:
   - route: allocations-pal-maheswarareddy.apps.evans.pal.pivotal.io
   memory: 1G
   instances: 1
-  env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-maheswarareddy.apps.evans.pal.pivotal.io
   services:
   - tracker-service-registry
