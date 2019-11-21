@@ -79,7 +79,6 @@ public class FlowTest {
 
         response = httpClient.get(registrationServerUrl("/"));
         assertThat(response.body).isEqualTo("Noop!");
-
         response = httpClient.post(registrationServerUrl("/registration"), jsonMapBuilder()
             .put("name", "aUser")
             .build()
