@@ -27,11 +27,5 @@ public class App {
         SpringApplication.run(App.class, args);
     }
 
-    @Bean
-    ProjectClient projectClient(
-        RestOperations restOperations,
-        @Value("${registration.server.endpoint}") String registrationEndpoint
-    ) {
-        return new ProjectClient(restOperations, registrationEndpoint);
-    }
+
 }
